@@ -15,7 +15,8 @@ function show() {
   dropdown.setAttribute("class", " drop dropdown");
   dropdown.classList.remove("hide");
   flexbox.classList.add("first");
-
+  center.classList.add("first");
+  header.classList.add("first");
   if (count >= 1) {
     noitem.style.display = "none";
   }
@@ -55,6 +56,8 @@ function cardAdd() {
   cardnew1.appendChild(deletebutton);
   cardnew1.appendChild(addnewbtn);
   flexbox.appendChild(cardnew1);
+  center.classList.add("first");
+  header.classList.add("first");
 
   cardnew1.classList.add("conatiner_child");
   tittle.innerText = newcard.value;
@@ -67,9 +70,15 @@ function cardAdd() {
   addnewbtn.addEventListener("click", () => {
     cardnew1.style.height = "auto";
     createItempopup(itemlist_start);
+    flexbox.classList.add("first");
+    header2[0].classList.add("first");
   });
+  center.classList.remove("first");
+  header.classList.remove("first");
   deletebutton.addEventListener("click", () => {
     cardnew1.remove();
+    if (center.innerText === " ");
+    blank[0].innerText = " ";
   });
 
   function createItempopup(itemlist_start) {
@@ -111,7 +120,9 @@ function cardAdd() {
       p.appendChild(tittle2);
       p.appendChild(markdone);
       markdone.classList.add("mark");
+      header2[0].classList.remove("first");
       flexbox.classList.remove("first");
+
       markdone.addEventListener("click", () => {
         Done();
       });
@@ -124,6 +135,8 @@ function cardAdd() {
     });
     close2.addEventListener("click", () => {
       dropdown2.remove();
+      flexbox.classList.remove("first");
+      header2[0].classList.remove("first");
       console.log(flexbox.childNodes);
       // if (flexbox.innerText === " ") {
       //   noitem.style.display = "block";
@@ -141,6 +154,8 @@ function cardAdd() {
     tittle6[0].style.display = "none";
     blank[0].innerText = tittle.innerText;
     blank[0].style.color = "black";
+    center.classList.remove("first");
+    header.classList.remove("first");
   });
   back1[0].addEventListener("click", () => {
     backbutton();
@@ -162,4 +177,7 @@ function cardAdd() {
 function closetask() {
   dropdown.setAttribute("class", "dropdown drop hide");
   first.classList.remove("first");
+  center.classList.remove("first");
+  header.classList.remove("first");
+  flexbox.classList.remove("first");
 }
