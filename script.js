@@ -72,6 +72,8 @@ function cardAdd() {
     createItempopup(itemlist_start);
     flexbox.classList.add("first");
     header2[0].classList.add("first");
+    center.classList.add("first");
+    header.classList.add("first");
   });
   center.classList.remove("first");
   header.classList.remove("first");
@@ -122,7 +124,8 @@ function cardAdd() {
       markdone.classList.add("mark");
       header2[0].classList.remove("first");
       flexbox.classList.remove("first");
-
+      center.classList.remove("first");
+      header.classList.remove("first");
       markdone.addEventListener("click", () => {
         Done();
       });
@@ -138,6 +141,8 @@ function cardAdd() {
       flexbox.classList.remove("first");
       header2[0].classList.remove("first");
       console.log(flexbox.childNodes);
+      center.classList.remove("first");
+      header.classList.remove("first");
       // if (flexbox.innerText === " ") {
       //   noitem.style.display = "block";
       //   console.log("kuch v");
