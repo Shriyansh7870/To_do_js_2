@@ -1,8 +1,8 @@
 body{
     background-color: black;
     overflow-x: hidden;
-    background-image: url(./background.png);
-    background-repeat:repeat;
+    background-image: url(./back3.png);
+  background-size: cover;
     
 }
 #tasklist{
@@ -27,7 +27,7 @@ body{
 }
 .button1{
 display: flex;
-    width: 180px;
+    width: 160px;
     height: 60px;
     font-size: 20px;
     color:black;
@@ -35,7 +35,7 @@ display: flex;
     border-radius: 15px;
     background-color: pink;
     font-weight: bolder;
-   margin-left:70vw;
+   margin-left:80vw;
    margin-top: -3vw;
    gap:8px;
    justify-content: center;
@@ -64,9 +64,9 @@ display: flex;
   
     position: fixed;
     height:140px;
-    width:260px;
-    left:40vw;
-    top:180px;
+    width:280px;
+    left:45vw;
+    top:200px;
     z-index: 1;
     padding: 15px;
     background-color: aqua;
@@ -111,8 +111,8 @@ display: flex;
    min-height: 320px;
      width:300px;
     border-radius: 10px;
-    /* background-color: rgb(235, 109, 230); */
-    background-image:url(./card4.png);
+    background-color: rgb(235, 109, 230);
+    /* background-image:url(./card4.png); */
  }
  .hide{
     display: none;
@@ -204,31 +204,17 @@ header{
    height: 60px;
    display: none;
   justify-content: space-evenly;
-  gap:50px;
+  gap:80px;
   
 }
 .blank{
    position: absolute;
    top:8vh;
-   left:40vw;
+   left:48vw;
    text-align: center;
    font-size: 4.8vw;
    color:black;
 
-}
-.button4{
-   width: 18vw;
-   height: 6vh;
-   color: black;
-   position: absolute;
-   top:8vh;
-   right:3vw;
-   border:3px solid rgb(229, 215, 215);
-   border-radius: 15px;
-   background-color: black;
-   font-weight: bolder;
-   float:right;
-  
 }
 .delete{
    background-image: url(./delete.png);
@@ -257,14 +243,20 @@ header{
    body{
       overflow-x: hidden;
       overflow-y: scroll;
+      background-image: url(./back3.png);
+      background-size: cover;
+
    }
    #tasklist{
       position: relative;
-      left: 50px; 
+      width: 60vw;
+      left: 110px; 
        font-size: 32px;
+      
    }
    #list{
       font-size: 30px;
+    
   }
   #noitem{
    position: absolute;
@@ -272,11 +264,14 @@ header{
    left: 50px;
    font-size: 30px;
    margin-top: 80px;
+   color:rgb(14, 234, 212);
+   
 
 }
 .button1{
    margin-top: 20px;
-   margin-left:10vw;
+   margin-left:25vw;
+ 
 }
 .dropdown{
   
@@ -288,15 +283,15 @@ header{
 }
 .conatiner_child{
    width: 250px;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 .dropdown2{
   
-   position: absolute;
+   position:fixed;
    height:140px;
    width:200px;
-   left:10vw;
-   top:340px;
+   left:20vw;
+   top:170px;
 
  }
  .backbutton{
@@ -307,7 +302,7 @@ header{
 .blank{
    position: absolute;
    top:20vw;
-   left:30vw;
+   left:40vw;
    color: black;
    text-align: center;
    font-size: 7.8vw;
@@ -328,14 +323,19 @@ header{
    body{
       overflow-x: hidden;
       overflow-y: scroll;
+      background-image: url(./back3.png);
+      background-size: cover;
    }
    #tasklist{
       position: relative;
+      width: 180px;
       left: 50px; 
        font-size: 32px;
+     
    }
    #list{
       font-size: 30px;
+
   }
   #noitem{
    position: absolute;
@@ -343,18 +343,20 @@ header{
    left: 50px;
    font-size: 30px;
    margin-top: 80px;
+ 
 
 }
 .button1{
-   margin-top: 20px;
-   margin-left:10vw;
+   margin-top: -60px;
+   margin-left:70vw;
+  
 }
 .dropdown{
   
    position: relative;
    height:160px;
    width:280px;
-   left:10vw;
+   left:30vw;
    top:120px;
 }
 #box{
@@ -371,17 +373,17 @@ header{
 }
 .dropdown2{
   
-   position: absolute;
+   position: fixed;
    height:140px;
-   width:200px;
-   left:10vw;
-   top:340px;
+   width:250px;
+   left:40vw;
+   top:170px;
 
  }
  .backbutton{
    margin-top: 75px;
    color:black;
-   font-size: 8.5vw;
+   font-size: 8vw;
 }
 .blank{
    position: absolute;
@@ -401,4 +403,98 @@ header{
 #center{
    margin-top: 120px;
 }
+}
+@media screen and (max-width: 280px){
+   body{
+      overflow-x: hidden;
+      overflow-y: scroll;
+      background-image: url(./back3.png);
+      background-size: cover;
+   }
+   #tasklist{
+      position: relative;
+      width: 180px;
+      left: 50px; 
+       font-size: 32px;
+ 
+   }
+   #list{
+      font-size: 30px;
+      
+  }
+  #noitem{
+   position: absolute;
+   margin-top: 50px;
+   left: 50px;
+   font-size: 30px;
+   margin-top: 80px;
+ 
+
+}
+.button1{
+   width: 150px;
+   margin-top: 30px;
+   margin-left:22vw;
+  
+}
+.dropdown{
+  
+   position: relative;
+   height:160px;
+   width:200px;
+   left:5vw;
+   top:120px;
+  
+}
+#box{
+   margin-top: 80px;
+     display: flex;
+     flex-wrap: wrap;
+     gap:40px;
+     justify-content: space-evenly;
+   
+ 
+ }
+.conatiner_child{
+  margin-left: 14px;
+  width: 270px;
+ 
+}
+.dropdown2{
+  
+   position: fixed;
+   height:140px;
+   width:200px;
+   left:5vw;
+   top:170px;
+ 
+ }
+ .backbutton{
+   margin-top: 75px;
+   color:black;
+   font-size: 8vw;
+ 
+}
+.blank{
+   position: absolute;
+   top:10vw;
+   left:42vw;
+   color: black;
+   text-align: center;
+   font-size: 7.8vw;
+  
+
+}
+.buttonfor{
+   position: relative;
+   margin-left: -80px;
+   margin-top: -50px;
+   width: 100px;
+   height: 50px;
+ 
+}
+#center{
+   margin-top: 120px;
+
+} 
 }

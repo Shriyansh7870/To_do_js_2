@@ -46,7 +46,6 @@ function cardAdd() {
   deletebutton.classList.add("btn3");
   var addnewbtn = document.createElement("button");
   addnewbtn.classList.add("btn4");
-
   console.log(start);
   cardnew1.setAttribute("id", start);
   cardnew1.appendChild(tittle);
@@ -81,6 +80,11 @@ function cardAdd() {
     cardnew1.remove();
     if (center.innerText === " ");
     blank[0].innerText = " ";
+    if (flexbox.childNodes.length === 1) {
+      noitem.style.display = "block";
+    } else {
+      noitem.style.display = "none";
+    }
   });
 
   function createItempopup(itemlist_start) {
