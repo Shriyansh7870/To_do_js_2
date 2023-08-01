@@ -17,6 +17,7 @@ function show() {
   flexbox.classList.add("first");
   center.classList.add("first");
   header.classList.add("first");
+
   if (count >= 1) {
     noitem.style.display = "none";
   }
@@ -168,6 +169,13 @@ function cardAdd() {
   });
   back1[0].addEventListener("click", () => {
     backbutton();
+    if (center.innerText === " ");
+    blank[0].innerText = " ";
+    if (flexbox.childNodes.length === 1) {
+      noitem.style.display = "block";
+    } else {
+      noitem.style.display = "none";
+    }
   });
   function backbutton() {
     console.log("Hii");
