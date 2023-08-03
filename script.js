@@ -8,6 +8,7 @@ const header = document.querySelector("header");
 const header2 = document.getElementsByClassName("taskList");
 let count = 0;
 let start = 0;
+let count2 = 0;
 function show() {
   count++;
   first.setAttribute("class", "first");
@@ -78,7 +79,7 @@ function cardAdd() {
   center.classList.remove("first");
   header.classList.remove("first");
   deletebutton.addEventListener("click", () => {
-    cardnew1.remove();
+    cardnew1.style.display = "none";
     if (center.innerText === " ");
     blank[0].innerText = " ";
     if (flexbox.childNodes.length === 1) {
@@ -148,13 +149,9 @@ function cardAdd() {
       console.log(flexbox.childNodes);
       center.classList.remove("first");
       header.classList.remove("first");
-      // if (flexbox.innerText === " ") {
-      //   noitem.style.display = "block";
-      //   console.log("kuch v");
-      // }
     });
   }
-  tittle.addEventListener("click", () => {
+  tittle.addEventListener("click", (n) => {
     flexbox.style.display = "none";
     center.style.display = "block";
     center.appendChild(cardnew1);
