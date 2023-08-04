@@ -109,7 +109,7 @@ display: flex;
  }
  .conatiner_child{
    
-     min-height: 280px;
+     min-height: 340px;
      width:300px;
     border-radius: 15px;
     background-color: rgb(235, 109, 230);
@@ -224,7 +224,7 @@ header{
    outline: none;
    border-radius: 50%;
    margin-left: 30px;
-   margin-top: 1vh; 
+   margin-top: 6vh; 
 }
 .add1{
     background-image: url(./Add.png);
@@ -237,7 +237,7 @@ header{
  
 }
 .kuch{
-   height:160px;
+   height:170px;
    overflow: auto;
 }
 
