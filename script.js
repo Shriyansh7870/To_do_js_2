@@ -39,10 +39,12 @@ function cardAdd() {
   count++;
   flexbox.classList.remove("first");
   var cardnew1 = document.createElement("div");
+  cardnew1.style.height = "220px";
   var tittle = document.createElement("h2");
   tittle.style.marginLeft = "40%";
   var heading = document.createElement("hr");
   var itemlist_start = document.createElement("div");
+  itemlist_start.classList.add("kuch");
   // var tittle2 = document.createElement("h3");
   var deletebutton = document.createElement("button");
   deletebutton.classList.add("btn3");
@@ -69,7 +71,6 @@ function cardAdd() {
   first.classList.remove("first");
 
   addnewbtn.addEventListener("click", () => {
-    cardnew1.style.height = "auto";
     createItempopup(itemlist_start);
     flexbox.classList.add("first");
     header2[0].classList.add("first");
