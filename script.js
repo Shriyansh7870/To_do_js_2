@@ -101,6 +101,7 @@ function cardAdd() {
     tittle3.innerText = "Add the  List";
     let input3 = document.createElement("input");
     input3.setAttribute("id", "cardnew2");
+    input3.setAttribute("autocomplete", "off");
     tittle2.innerText = input3.value;
     let Add2 = document.createElement("button");
     Add2.classList.add("Add2");

@@ -108,11 +108,11 @@ display: flex;
  
  }
  .conatiner_child{
-   min-height: 320px;
+   min-height: 280px;
      width:300px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: rgb(235, 109, 230);
-    /* background-image:url(./card4.png); */
+    border:5px solid rgb(10, 146, 200)
  }
  .hide{
     display: none;
@@ -226,7 +226,7 @@ header{
    border-radius: 50%;
    position: relative;
    margin-left: 30px;
-   margin-top: 5vw;
+   margin-top: 17vh;
 }
 .add1{
    background-image: url(./Add.png);
